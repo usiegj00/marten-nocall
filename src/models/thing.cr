@@ -4,6 +4,7 @@ class Thing < Marten::Model
 
   before_validation :ensure_must_have
   def ensure_must_have
+    raise "There should not already be a validation error at this point." if self.errors.any?
     self.must_have = UUID.random
   end
   
