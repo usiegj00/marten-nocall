@@ -1,0 +1,10 @@
+name: nocall
+version: 0.1.0
+
+dependencies:
+  marten:
+    github: martenframework/marten
+  marten_auth:
+    github: martenframework/marten-auth
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
